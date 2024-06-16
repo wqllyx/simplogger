@@ -7,7 +7,7 @@ namespace wqllyx
     class Logger
     {
     public:
-        enum Level : unsigned long
+        enum Level 
         {
             DEBUG = 0,
             INFO,
@@ -16,7 +16,7 @@ namespace wqllyx
             FATAL,
             LEVEL_COUNT
         };
-        // void log(Level Level, const char *filen, int line, const char *format, ...);
+        void log(Level level , const char *file, int line, const char *format, ...);
 
         static Logger *getInstance();
 
